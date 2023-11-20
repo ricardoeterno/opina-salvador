@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação de Serviços Públicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #voting-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .service {
+            margin-bottom: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div id="voting-container">
+    <h1>Votação de Serviços Públicos</h1>
+
+    <div class="service">
+        <label for="hemoba">HEMOBA:</label>
+        <select id="hemoba" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="limpurb">LIMPURB:</label>
+      <select id="limpurb" class="voting-option">
+       <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+       </select>
+    </div>
+
+    <div class="service">
+        <label for="sac">SAC:</label>
+        <select id="sac" class="voting-option">
+          <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+            </select>
+    </div>
+
+    <div class="service">
+        <label for="integra">INTEGRA:</label>
+        <select id="integra" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="neoenergia">NEOENERGIA:</label>
+        <select id="neoenergia" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="embasa">EMBASA:</label>
+        <select id="embasa" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="transalvador">TRANSALVADOR:</label>
+        <select id="transalvador" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="ccr-metro">CCR METRÔ:</label>
+        <select id="ccr-metro" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="sedur">SEDUR:</label>
+        <select id="sedur" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <div class="service">
+        <label for="detran">DETRAN:</label>
+        <select id="detran" class="voting-option">
+            <option value="-1">Sem opinião</option>
+            <option value="0">Ruim</option>
+            <option value="1">Regular</option>
+            <option value="2">Bom</option>
+            <option value="3">Ótimo</option>
+            <option value="4">Excelente</option>
+        </select>
+    </div>
+
+    <button onclick="submitVote()">Enviar Votos</button>
+</div>
+
+<script>
+    function submitVote() {
+        
+        alert('Votos enviados com sucesso!');
+    }
+</script>
+
+</body>
+</html>
